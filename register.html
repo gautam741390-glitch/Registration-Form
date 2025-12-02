@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../resume_site/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Registration Form</h1>
+    <nav>
+      <a href="../resume_site/index.html">Home</a>
+      <a href="register.html" aria-current="page">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form action="process.php" method="post" id="regForm">
+      <label>
+        Full Name:<br>
+        <input type="text" name="fullname" required>
+      </label>
+      <br><br>
+      <label>
+        Email:<br>
+        <input type="email" name="email" required>
+      </label>
+      <br><br>
+      <label>
+        Phone:<br>
+        <input type="tel" name="phone">
+      </label>
+      <br><br>
+      <label>
+        Course Applying For:<br>
+        <select name="course">
+          <option>Web Development</option>
+          <option>SDE Training</option>
+          <option>Data Science</option>
+        </select>
+      </label>
+      <br><br>
+      <label>
+        Message:<br>
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="note">On success the server will display a formatted summary of your submission.</p>
+  </main>
+
+  <footer class="site-footer"><p>© 2025</p></footer>
+</body>
+</html>
